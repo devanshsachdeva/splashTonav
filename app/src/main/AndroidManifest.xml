@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sachdevadevansh.splashtonav">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="JIMS"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".University"
+            android:label="@string/title_activity_university"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sachdevadevansh.splashtonav.MainActivity" />
+        </activity>
+        <activity
+            android:name=".loginAdmin"
+            android:label="Login"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Admin" />
+        <activity
+            android:name=".Logintry"
+            android:label="@string/title_activity_logintry"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sachdevadevansh.splashtonav.Home" />
+        </activity>
+        <activity android:name=".signin" />
+        <activity
+            android:name=".Courses"
+            android:label="@string/title_activity_courses"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sachdevadevansh.splashtonav.Home" />
+        </activity>
+        <activity
+            android:name=".Faculty"
+            android:label="@string/title_activity_faculty"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sachdevadevansh.splashtonav.Home" />
+        </activity>
+        <activity
+            android:name=".Others"
+            android:label="@string/title_activity_others"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sachdevadevansh.splashtonav.Home" />
+        </activity>
+        <activity
+            android:name=".Campus"
+            android:label="@string/title_activity_campus"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sachdevadevansh.splashtonav.Home" />
+        </activity>
+        <activity
+            android:name=".Admissions"
+            android:label="@string/title_activity_admissions"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sachdevadevansh.splashtonav.Home" />
+        </activity>
+        <activity
+            android:name=".ContactUs"
+            android:label="@string/title_activity_contact_us"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sachdevadevansh.splashtonav.Home" />
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/title_activity_about_us"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sachdevadevansh.splashtonav.Home" />
+        </activity>
+        <activity
+            android:name=".Achievements"
+            android:label="@string/title_activity_achievements"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sachdevadevansh.splashtonav.Home" />
+        </activity>
+    </application>
+
+</manifest>
